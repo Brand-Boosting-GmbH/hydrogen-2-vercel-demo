@@ -2,6 +2,8 @@
 
 This repository shows how Hydrogen "2" (2023-01+) can be deployed on Vercel Edge Functions.
 
+Try it here: https://hydrogen-2-vercel-demo.vercel.app/
+
 ### Modified files
 * server.ts
 * server-dev.ts (new)
