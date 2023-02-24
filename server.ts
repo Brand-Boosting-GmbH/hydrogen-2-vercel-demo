@@ -15,18 +15,18 @@ export default async function (request: Request): Promise<Response> {
      * and only variables explicitly named are present inside a Vercel Edge Function.
      * See https://github.com/vercel/next.js/pull/31237/files
      */
-    const env: Env = {
+     const env: Env = {
       SESSION_SECRET: '',
       PUBLIC_STOREFRONT_API_TOKEN: '',
-      PRIVATE_STOREFRONT_API_TOKEN: '',
       PUBLIC_STOREFRONT_API_VERSION: '',
+      PRIVATE_STOREFRONT_API_TOKEN: '',
       PUBLIC_STORE_DOMAIN: '',
     };
     env.SESSION_SECRET = process.env.SESSION_SECRET;
     env.PUBLIC_STOREFRONT_API_TOKEN = process.env.PUBLIC_STOREFRONT_API_TOKEN;
     env.PRIVATE_STOREFRONT_API_TOKEN = process.env.PRIVATE_STOREFRONT_API_TOKEN;
-    env.PUBLIC_STOREFRONT_API_VERSION = process.env.PUBLIC_STOREFRONT_API_TOKEN;
-    env.PUBLIC_STORE_DOMAIN = process.env.PUBLIC_STOREFRONT_API_TOKEN;
+    env.PUBLIC_STOREFRONT_API_VERSION = process.env.PUBLIC_STOREFRONT_API_VERSION;
+    env.PUBLIC_STORE_DOMAIN = process.env.PUBLIC_STORE_DOMAIN;
     /**
      * Open a cache instance in the worker and a custom session instance.
      */
