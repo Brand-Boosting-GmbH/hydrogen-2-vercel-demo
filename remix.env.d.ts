@@ -9,7 +9,7 @@ declare global {
   /**
    * A global `process` object is only available during build to access NODE_ENV.
    */
-  const process: {env: {NODE_ENV: 'production' | 'development'}};
+  const process: {env: {NODE_ENV: 'production' | 'development'} & Env};
 
   /**
    * Declare expected Env parameter in fetch handler.
